@@ -27,11 +27,8 @@ const HeroSection = () => {
       <div className="hero-overlay" />
       <div className="relative z-20 h-full flex flex-col justify-center items-center text-white px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient animate-fade-in">
-          Creative Studio
+          Sinusoidal is a design office that helps forward-thinking brands make their innovation clear and unmissable.
         </h1>
-        <p className="text-xl md:text-2xl max-w-2xl text-center text-gray-200 animate-fade-in" style={{ animationDelay: '200ms' }}>
-          We craft digital experiences that inspire and innovate
-        </p>
       </div>
     </div>
   );
