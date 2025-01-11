@@ -20,7 +20,7 @@ const HeroSection = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source
-          src="https://assets.mixkit.co/videos/preview/mixkit-ink-swirling-in-water-107-large.mp4"
+          src="https://www.youtube.com/watch?v=ehtGdnzW9b0"
           type="video/mp4"
         />
       </video>
