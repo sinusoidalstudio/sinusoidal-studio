@@ -25,7 +25,7 @@ const HeroSection = () => {
         />
       </video>
       <div className="hero-overlay" />
-      <div className="relative z-20 h-full flex flex-col justify-center items-center text-white px-4">
+      <div className="relative z-20 h-full flex flex-col justify-center items-center text-white px-8 md:px-16 lg:px-24">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient animate-fade-in">
           Sinusoidal is a design office that helps forward-thinking brands make their innovation clear and unmissable.
         </h1>
