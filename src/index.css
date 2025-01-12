@@ -38,7 +38,7 @@
 
 @layer utilities {
   .hero-overlay {
-    @apply absolute inset-0 bg-black/60 z-10;
+    @apply absolute inset-0 bg-black/30 z-10;
   }
   
   .text-gradient {
