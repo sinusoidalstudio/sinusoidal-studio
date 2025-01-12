@@ -20,7 +20,7 @@ const HeroSection = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source
-          src="/your-video-name.mp4"
+          src="/WebVideo.mp4"
           type="video/mp4"
         />
       </video>
