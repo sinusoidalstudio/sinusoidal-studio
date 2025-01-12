@@ -20,7 +20,7 @@ const HeroSection = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source
-          src="https://www.youtube.com/watch?v=ehtGdnzW9b0"
+          src="/your-video-name.mp4"
           type="video/mp4"
         />
       </video>
