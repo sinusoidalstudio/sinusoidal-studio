@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <img
-            src="/placeholder.svg"
+            src="/noBgSinus.png"
             alt="Sinusoidal Logo"
             className="h-8 w-8"
           />
