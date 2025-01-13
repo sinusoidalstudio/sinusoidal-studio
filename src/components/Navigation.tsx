@@ -9,7 +9,7 @@ const Navigation = () => {
           <img
             src="/logo.png"
             alt="Sinusoidal Logo"
-            className="h-24 w-auto object-contain"
+            className="h-12 w-auto object-contain"
           />
         </Link>
         <div className="space-x-8">
