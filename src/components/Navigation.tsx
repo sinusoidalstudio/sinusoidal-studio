@@ -13,9 +13,9 @@ const Navigation = () => {
           />
         </Link>
         <div className="space-x-8">
-          <Link to="/work" className="text-white hover:text-gray-300 transition-colors">Work</Link>
-          <Link to="/about" className="text-white hover:text-gray-300 transition-colors">About</Link>
-          <Link to="/contact" className="text-white hover:text-gray-300 transition-colors">Contact</Link>
+          <Link to="/work" className="text-white hover:text-gray-300 transition-colors font-bold">Work</Link>
+          <Link to="/about" className="text-white hover:text-gray-300 transition-colors font-bold">About</Link>
+          <Link to="/contact" className="text-white hover:text-gray-300 transition-colors font-bold">Contact</Link>
         </div>
       </div>
     </nav>
