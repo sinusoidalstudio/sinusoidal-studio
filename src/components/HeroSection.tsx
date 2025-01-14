@@ -30,10 +30,10 @@ const HeroSection = () => {
         />
       </video>
       <div className="hero-overlay" />
-      <div className={`relative z-20 h-full flex flex-col justify-center items-center text-white px-8 md:px-16 lg:px-24 transition-opacity duration-1000 ${showText ? 'opacity-100' : 'opacity-0'}`}>
-        <h1 className="text-5xl md:text-7xl font-medium mb-6 text-gradient animate-fade-in">
-        Sinusoidal is a creative design studio that partners with visionary
-        brands to transform their innovations into impactful and unforgettable experiences.
+      <div className={`relative z-20 h-full flex flex-col justify-center items-center text-white px-4 sm:px-8 md:px-16 lg:px-24 transition-opacity duration-1000 ${showText ? 'opacity-100' : 'opacity-0'}`}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium mb-6 text-gradient animate-fade-in">
+          Sinusoidal is a creative design studio that partners with visionary
+          brands to transform their innovations into impactful and unforgettable experiences.
         </h1>
       </div>
     </div>
