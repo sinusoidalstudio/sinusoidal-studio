@@ -26,10 +26,10 @@ const Navigation = () => {
               <Menu size={24} />
             </button>
             {isMenuOpen && (
-              <div className="absolute right-0 top-full mt-2 bg-background border border-border rounded-lg shadow-lg py-2 animate-fade-in">
-                <Link to="/work" className="block px-4 py-2 text-white hover:bg-secondary transition-colors font-bold">Work</Link>
-                <Link to="/about" className="block px-4 py-2 text-white hover:bg-secondary transition-colors font-bold">About</Link>
-                <Link to="/contact" className="block px-4 py-2 text-white hover:bg-secondary transition-colors font-bold">Contact</Link>
+              <div className="absolute right-0 top-full mt-2 bg-[#222222] border border-[#333333] rounded-lg shadow-lg py-2 animate-fade-in">
+                <Link to="/work" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">Work</Link>
+                <Link to="/about" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">About</Link>
+                <Link to="/contact" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">Contact</Link>
               </div>
             )}
           </div>
