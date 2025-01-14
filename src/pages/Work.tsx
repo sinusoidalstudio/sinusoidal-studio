@@ -3,8 +3,6 @@ import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 
-<lov-add-dependency>framer-motion@latest</lov-add-dependency>
-
 const Work = () => {
   const projects = [
     {
@@ -28,7 +26,7 @@ const Work = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-black">
       <Navigation />
       <main className="container mx-auto px-4 pt-24 pb-16">
         <motion.h1 
