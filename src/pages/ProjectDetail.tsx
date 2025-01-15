@@ -20,7 +20,8 @@ const ProjectDetail = () => {
       "Motion Design",
       "Development"
     ],
-    videoId: "dQw4w9WgXcQ" // Example YouTube video ID
+    videoId: "dQw4w9WgXcQ", // Example YouTube video ID
+    longDescription: "Our team worked closely with the client to create a groundbreaking digital experience that seamlessly blends innovation with user-centric design. Through careful consideration of both aesthetic and functional elements, we developed a solution that not only meets but exceeds modern digital standards. The project incorporates cutting-edge technologies while maintaining an intuitive and engaging user interface. This approach allowed us to deliver a product that resonates with the target audience while pushing creative boundaries."
   };
 
   return (
@@ -83,6 +84,17 @@ const ProjectDetail = () => {
               />
             </motion.div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-16 max-w-3xl"
+          >
+            <p className="text-lg leading-relaxed text-gray-300">
+              {project.longDescription}
+            </p>
+          </motion.div>
 
           <motion.div 
             className="mt-16"
