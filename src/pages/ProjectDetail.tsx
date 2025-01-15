@@ -19,7 +19,8 @@ const ProjectDetail = () => {
       "Digital Design",
       "Motion Design",
       "Development"
-    ]
+    ],
+    videoId: "dQw4w9WgXcQ" // Example YouTube video ID
   };
 
   return (
@@ -82,6 +83,23 @@ const ProjectDetail = () => {
               />
             </motion.div>
           </div>
+
+          <motion.div 
+            className="mt-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                className="w-full h-[600px] rounded-lg"
+                src={`https://www.youtube.com/embed/${project.videoId}`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </motion.div>
         </motion.div>
       </main>
     </div>
