@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 
 const Work = () => {
+  const navigate = useNavigate();
   const projects = [
     {
       id: 1,
@@ -25,6 +27,10 @@ const Work = () => {
     },
   ];
 
+  const handleProjectClick = (projectId: number) => {
+    navigate(`/work/${projectId}`);
+  };
+
   return (
     <div className="min-h-screen bg-black">
       <Navigation />
@@ -44,6 +50,7 @@ const Work = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: project.id * 0.2 }}
+              onClick={() => handleProjectClick(project.id)}
             >
               <Card className="group cursor-pointer overflow-hidden bg-transparent border-none">
                 <CardContent className="p-0">
