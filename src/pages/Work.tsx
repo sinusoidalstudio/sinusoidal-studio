@@ -9,9 +9,9 @@ const Work = () => {
   const projects = [
     {
       id: 1,
-      title: "Project One",
-      description: "Digital Experience",
-      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+      title: "Temple Glasses",
+      description: "Eyewear Design",
+      imageUrl: "/Images/BlondeMan.jpg",
     },
     {
       id: 2,
