@@ -11,7 +11,7 @@ const Work = () => {
       id: 1,
       title: "Temple Glasses",
       description: "Eyewear Design",
-      imageUrl: "/Images/BlondeMan.jpg",
+      imageUrl: "public/Images/BlondeMan.jpg",
     },
     {
       id: 2,
