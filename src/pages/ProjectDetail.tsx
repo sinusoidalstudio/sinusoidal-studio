@@ -85,17 +85,6 @@ const ProjectDetail = () => {
             </motion.div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-16 max-w-3xl"
-          >
-            <p className="text-lg leading-relaxed text-gray-300">
-              {project.longDescription}
-            </p>
-          </motion.div>
-
           <motion.div 
             className="mt-16"
             initial={{ opacity: 0, y: 20 }}
@@ -111,6 +100,17 @@ const ProjectDetail = () => {
                 allowFullScreen
               ></iframe>
             </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="mt-16 max-w-3xl"
+          >
+            <p className="text-lg leading-relaxed text-gray-300">
+              {project.longDescription}
+            </p>
           </motion.div>
         </motion.div>
       </main>
