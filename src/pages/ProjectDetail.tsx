@@ -13,7 +13,7 @@ const ProjectDetail = () => {
     title: "Temple Glasses",
     description: "Digital Experience",
     fullDescription: "A new era in eyewear comfort",
-    imageUrl: "https://www.dropbox.com/scl/fi/4bjnxckr2ijfe3sfym9gs/BlondeMan.jpg?rlkey=jhyyzzfywvebko4ncp5il7yvm&st=3bcr6sk2&dl=0",
+    imageUrl: "/Images/BlondeMan.jpg",
     details: [
       
       "Product Design",
