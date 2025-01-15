@@ -22,7 +22,7 @@ const ProjectDetail = () => {
       "Prototyping",
       "Brand Strategy"
     ],
-    videoId: "lldmz-JhWTw&t=2s", // Example YouTube video ID
+    videoId: "lldmz-JhWTw&t", // Example YouTube video ID
     longDescription: "Temple glasses are designed with a difference. Featuring non-slip pads that rest comfortably on your temples – the natural support points on your head – they put no more pressure on your ears, helping to prevent pain and irritation."
   };
 
