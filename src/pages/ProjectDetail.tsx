@@ -10,18 +10,20 @@ const ProjectDetail = () => {
 
   // This would typically come from an API or database
   const project = {
-    title: "Project Title",
+    title: "Temple Glasses",
     description: "Digital Experience",
-    fullDescription: "A comprehensive digital experience that pushes the boundaries of interactive design.",
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    fullDescription: "A new era in eyewear comfort",
+    imageUrl: "https://www.dropbox.com/scl/fi/4bjnxckr2ijfe3sfym9gs/BlondeMan.jpg?rlkey=jhyyzzfywvebko4ncp5il7yvm&st=3bcr6sk2&dl=0",
     details: [
-      "Brand Strategy",
-      "Digital Design",
+      
+      "Product Design",
       "Motion Design",
-      "Development"
+      "Development",
+      "Prototyping",
+      "Brand Strategy"
     ],
-    videoId: "dQw4w9WgXcQ", // Example YouTube video ID
-    longDescription: "Our team worked closely with the client to create a groundbreaking digital experience that seamlessly blends innovation with user-centric design. Through careful consideration of both aesthetic and functional elements, we developed a solution that not only meets but exceeds modern digital standards. The project incorporates cutting-edge technologies while maintaining an intuitive and engaging user interface. This approach allowed us to deliver a product that resonates with the target audience while pushing creative boundaries."
+    videoId: "lldmz-JhWTw&t=2s", // Example YouTube video ID
+    longDescription: "Temple glasses are designed with a difference. Featuring non-slip pads that rest comfortably on your temples – the natural support points on your head – they put no more pressure on your ears, helping to prevent pain and irritation."
   };
 
   return (
