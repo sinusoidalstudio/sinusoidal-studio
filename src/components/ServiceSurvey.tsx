@@ -12,8 +12,10 @@ import {
 } from './ui/form';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
 import { Checkbox } from './ui/checkbox';
+import { Input } from './ui/input';
 
 interface ServiceSurveyValues {
+  email: string;
   projectType: string;
   services: string[];
   budget: string;
@@ -24,6 +26,8 @@ const ServiceSurvey = () => {
 
   const onSubmit = (data: ServiceSurveyValues) => {
     console.log('Survey data:', data);
+    // Here you would typically integrate with an email service or backend API
+    // to send the data to sinusoidalstudio@gmail.com
     toast.success('Survey submitted successfully!');
     form.reset();
   };
@@ -41,6 +45,20 @@ const ServiceSurvey = () => {
       <h2 className="text-2xl font-semibold text-white mb-6">Service Survey</h2>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input type="email" placeholder="Your email" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
           <FormField
             control={form.control}
             name="projectType"
