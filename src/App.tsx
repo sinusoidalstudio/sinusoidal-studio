@@ -8,6 +8,7 @@ import Work from "./pages/Work";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetail";
+import FeaturedOn from "./pages/FeaturedOn";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/work/:projectId" element={<ProjectDetail />} />
+          <Route path="/featured" element={<FeaturedOn />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

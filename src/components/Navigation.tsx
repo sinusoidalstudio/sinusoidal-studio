@@ -28,6 +28,7 @@ const Navigation = () => {
             {isMenuOpen && (
               <div className="absolute right-0 top-full mt-2 bg-[#222222] border border-[#333333] rounded-lg shadow-lg py-2 animate-fade-in">
                 <Link to="/work" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">Work</Link>
+                <Link to="/featured" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">Featured On</Link>
                 <Link to="/about" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">About</Link>
                 <Link to="/contact" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">Contact</Link>
               </div>
@@ -36,6 +37,7 @@ const Navigation = () => {
         ) : (
           <div className="space-x-8">
             <Link to="/work" className="text-white hover:text-gray-300 transition-colors font-bold">Work</Link>
+            <Link to="/featured" className="text-white hover:text-gray-300 transition-colors font-bold">Featured On</Link>
             <Link to="/about" className="text-white hover:text-gray-300 transition-colors font-bold">About</Link>
             <Link to="/contact" className="text-white hover:text-gray-300 transition-colors font-bold">Contact</Link>
           </div>
