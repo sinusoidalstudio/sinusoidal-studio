@@ -28,8 +28,8 @@ const ServiceSurvey = () => {
   const onSubmit = async (data: ServiceSurveyValues) => {
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_div5kl7',
+        'template_1hl0ynl',
         {
           from_email: data.email,
           project_type: data.projectType,
@@ -37,7 +37,7 @@ const ServiceSurvey = () => {
           budget: data.budget,
           to_email: 'sinusoidalstudio@gmail.com',
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'EwArlFJTahljEsCSI'
       );
       toast.success('Survey submitted successfully!');
       form.reset();

@@ -26,15 +26,15 @@ const ContactForm = () => {
   const onSubmit = async (data: ContactFormValues) => {
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_div5kl7',
+        'template_1hl0ynl',
         {
           from_name: data.name,
           from_email: data.email,
           message: data.message,
           to_email: 'sinusoidalstudio@gmail.com',
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'EwArlFJTahljEsCSI'
       );
       toast.success('Message sent successfully!');
       form.reset();
