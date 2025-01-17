@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
+import emailjs from '@emailjs/browser';
 import { Button } from './ui/button';
 import {
   Form,
@@ -24,12 +25,26 @@ interface ServiceSurveyValues {
 const ServiceSurvey = () => {
   const form = useForm<ServiceSurveyValues>();
 
-  const onSubmit = (data: ServiceSurveyValues) => {
-    console.log('Survey data:', data);
-    // Here you would typically integrate with an email service or backend API
-    // to send the data to sinusoidalstudio@gmail.com
-    toast.success('Survey submitted successfully!');
-    form.reset();
+  const onSubmit = async (data: ServiceSurveyValues) => {
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        {
+          from_email: data.email,
+          project_type: data.projectType,
+          services: data.services.join(', '),
+          budget: data.budget,
+          to_email: 'sinusoidalstudio@gmail.com',
+        },
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
+      toast.success('Survey submitted successfully!');
+      form.reset();
+    } catch (error) {
+      console.error('Email error:', error);
+      toast.error('Failed to submit survey. Please try again.');
+    }
   };
 
   const services = [

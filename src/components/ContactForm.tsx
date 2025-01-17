@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
+import emailjs from '@emailjs/browser';
 import { Button } from './ui/button';
 import {
   Form,
@@ -22,10 +23,25 @@ interface ContactFormValues {
 const ContactForm = () => {
   const form = useForm<ContactFormValues>();
 
-  const onSubmit = (data: ContactFormValues) => {
-    console.log('Contact form data:', data);
-    toast.success('Message sent successfully!');
-    form.reset();
+  const onSubmit = async (data: ContactFormValues) => {
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        {
+          from_name: data.name,
+          from_email: data.email,
+          message: data.message,
+          to_email: 'sinusoidalstudio@gmail.com',
+        },
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
+      toast.success('Message sent successfully!');
+      form.reset();
+    } catch (error) {
+      console.error('Email error:', error);
+      toast.error('Failed to send message. Please try again.');
+    }
   };
 
   return (
