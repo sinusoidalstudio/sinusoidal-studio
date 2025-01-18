@@ -31,18 +31,32 @@ const ServiceSurvey = () => {
     }
 
     try {
+      // Format project type to be more readable
+      const formattedProjectType = data.projectType === 'new-project' ? 'New Project' : 'Existing Project';
+      
+      // Create a formatted message with all details
+      const templateParams = {
+        from_email: data.email,
+        to_email: 'sinusoidalstudio@gmail.com',
+        message: `
+Project Details:
+- Project Type: ${formattedProjectType}
+- Services Required: ${data.services.join(', ')}
+- Budget Range: ${data.budget}
+- Contact Email: ${data.email}
+        `.trim(),
+        project_type: formattedProjectType,
+        services: data.services.join(', '),
+        budget: data.budget,
+      };
+
       await emailjs.send(
         'service_div5kl7',
         'template_1hl0ynl',
-        {
-          from_email: data.email,
-          project_type: data.projectType,
-          services: data.services.join(', '),
-          budget: data.budget,
-          to_email: 'sinusoidalstudio@gmail.com',
-        },
+        templateParams,
         'EwArlFJTahljEsCSI'
       );
+      
       toast.success('Survey submitted successfully!');
       form.reset();
       setCurrentStep(0);
