@@ -12,11 +12,24 @@ import { BudgetField } from './survey/BudgetField';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 
 const ServiceSurvey = () => {
-  const form = useForm<ServiceSurveyValues>();
+  const form = useForm<ServiceSurveyValues>({
+    defaultValues: {
+      email: '',
+      projectType: '',
+      services: [],
+      budget: '',
+    }
+  });
   const [currentStep, setCurrentStep] = React.useState(0);
   const steps = ['projectType', 'services', 'budget', 'email'];
 
   const onSubmit = async (data: ServiceSurveyValues) => {
+    // Validate that all required fields are filled
+    if (!data.projectType || data.services.length === 0 || !data.budget || !data.email) {
+      toast.error('Please fill in all fields before submitting.');
+      return;
+    }
+
     try {
       await emailjs.send(
         'service_div5kl7',
@@ -39,8 +52,39 @@ const ServiceSurvey = () => {
     }
   };
 
-  const nextStep = () => {
-    if (currentStep < steps.length - 1) {
+  const nextStep = async () => {
+    let canProceed = true;
+    const currentValues = form.getValues();
+
+    // Validate current step before proceeding
+    switch (steps[currentStep]) {
+      case 'projectType':
+        if (!currentValues.projectType) {
+          toast.error('Please select a project type');
+          canProceed = false;
+        }
+        break;
+      case 'services':
+        if (currentValues.services.length === 0) {
+          toast.error('Please select at least one service');
+          canProceed = false;
+        }
+        break;
+      case 'budget':
+        if (!currentValues.budget) {
+          toast.error('Please select a budget range');
+          canProceed = false;
+        }
+        break;
+      case 'email':
+        if (!currentValues.email) {
+          toast.error('Please enter your email');
+          canProceed = false;
+        }
+        break;
+    }
+
+    if (canProceed && currentStep < steps.length - 1) {
       setCurrentStep(currentStep + 1);
     }
   };
