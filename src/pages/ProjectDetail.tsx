@@ -6,25 +6,60 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 
 const ProjectDetail = () => {
-  const { projectId } = useParams();
+  const { projectId } = useParams<{ projectId: string }>();
 
-  // This would typically come from an API or database
-  const project = {
-    title: "Temple Glasses",
-    description: "Digital Experience",
-    fullDescription: "A new era in eyewear comfort",
-    imageUrl: "/Images/BlondeMan.jpg",
-    details: [
-      
-      "Product Design",
-      "Motion Design",
-      "Development",
-      "Prototyping",
-      "Brand Strategy"
-    ],
-    videoId: "lldmz-JhWTw", // Example YouTube video ID
-    longDescription: "Temple glasses are designed with a difference. Featuring non-slip pads that rest comfortably on your temples – the natural support points on your head – they put no more pressure on your ears, helping to prevent pain and irritation."
+  // Project data with matching IDs
+  const projects = {
+    "temple-glasses": {
+      title: "Temple Glasses",
+      description: "Digital Experience",
+      fullDescription: "A new era in eyewear comfort",
+      imageUrl: "/Images/BlondeMan.jpg",
+      details: [
+        "Product Design",
+        "Motion Design",
+        "Development",
+        "Prototyping",
+        "Brand Strategy"
+      ],
+      videoId: "lldmz-JhWTw",
+      longDescription: "Temple glasses are designed with a difference. Featuring non-slip pads that rest comfortably on your temples – the natural support points on your head – they put no more pressure on your ears, helping to prevent pain and irritation."
+    },
+    "black-hole-pillow": {
+      title: "Black Hole Pillow",
+      description: "Brand Identity",
+      fullDescription: "Comfort meets innovation",
+      imageUrl: "/coverBh-min.png",
+      details: [
+        "Brand Design",
+        "Product Design",
+        "Development",
+        "Marketing Strategy"
+      ],
+      videoId: "lldmz-JhWTw",
+      longDescription: "The Black Hole Pillow represents a revolutionary approach to comfort and rest, combining innovative design with premium materials."
+    },
+    "project-three": {
+      title: "Project Three",
+      description: "Interactive Design",
+      fullDescription: "Digital Innovation",
+      imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+      details: [
+        "UI/UX Design",
+        "Development",
+        "Testing",
+        "Deployment"
+      ],
+      videoId: "lldmz-JhWTw",
+      longDescription: "An innovative approach to interactive design, pushing the boundaries of digital experiences."
+    }
   };
+
+  const project = projectId ? projects[projectId as keyof typeof projects] : null;
+
+  if (!project) {
+    return <div>Project not found</div>;
+  }
 
   return (
     <div className="min-h-screen bg-black text-white">

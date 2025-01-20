@@ -8,26 +8,26 @@ const Work = () => {
   const navigate = useNavigate();
   const projects = [
     {
-      id: 1,
+      id: "temple-glasses",
       title: "Temple Glasses",
       description: "Eyewear Design",
       imageUrl: "/Images/BlondeMan.jpg",
     },
     {
-      id: 2,
+      id: "black-hole-pillow",
       title: "Black Hole Pillow",
       description: "Brand Identity",
       imageUrl: "/coverBh-min.png",
     },
     {
-      id: 3,
+      id: "project-three",
       title: "Project Three",
       description: "Interactive Design",
       imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
     },
   ];
 
-  const handleProjectClick = (projectId: number) => {
+  const handleProjectClick = (projectId: string) => {
     navigate(`/work/${projectId}`);
   };
 
@@ -49,7 +49,7 @@ const Work = () => {
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: project.id * 0.2 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               onClick={() => handleProjectClick(project.id)}
             >
               <Card className="group cursor-pointer overflow-hidden bg-transparent border-none">
