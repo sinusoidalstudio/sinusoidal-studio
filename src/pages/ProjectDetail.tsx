@@ -38,7 +38,7 @@ const ProjectDetail = () => {
         "Marketing Strategy"
       ],
       videoId: "TBffPFjsDmc",
-      websiteUrl: "https://blackholepillow.com",
+      websiteUrl: "https://blackholepillow.store",
       longDescription: "The Black Hole Pillow represents a revolutionary approach to comfort and rest, combining innovative design with premium materials."
     },
     
