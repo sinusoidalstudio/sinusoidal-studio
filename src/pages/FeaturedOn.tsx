@@ -14,7 +14,7 @@ const FeaturedOn = () => {
             rel="noopener noreferrer"
             className="block text-2xl font-bold text-white hover:text-gray-300 transition-colors"
           >
-            Forbes
+            Yanko Design
           </a>
           <a 
             href="https://en.futuroprossimo.it/2024/11/addio-stanghette-i-nuovi-occhiali-si-poggiano-solo-sulle-tempie/" 
@@ -22,7 +22,7 @@ const FeaturedOn = () => {
             rel="noopener noreferrer"
             className="block text-2xl font-bold text-white hover:text-gray-300 transition-colors"
           >
-            TechCrunch
+            Futuro Prossimo
           </a>
           <a 
             href="https://designwanted.com/temple-eyewear-modern-day-armor/?fbclid=PAZXh0bgNhZW0CMTEAAaaVSUFs7c0LaiR6LIQi3PbUMGWm3jMI98RYBHE4Z7Ohj3yHaDF2wfbAawI_aem_7IFWMynrzh-TCGu6FSjo8Q" 
@@ -30,7 +30,7 @@ const FeaturedOn = () => {
             rel="noopener noreferrer"
             className="block text-2xl font-bold text-white hover:text-gray-300 transition-colors"
           >
-            Wired
+            DesignWanted
           </a>
         </div>
       </div>
