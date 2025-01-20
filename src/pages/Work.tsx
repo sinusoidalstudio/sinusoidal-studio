@@ -19,7 +19,7 @@ const Work = () => {
       title: "Black Hole Pillow",
       description: "Brand Identity",
       imageUrl: "/coverBh-min.png",
-      websiteUrl: "https://blackholepillow.com"
+      websiteUrl: "https://blackholepillow.store"
     },
   
   ];
