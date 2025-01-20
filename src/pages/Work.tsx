@@ -17,7 +17,7 @@ const Work = () => {
       id: 2,
       title: "Black Hole Pillow",
       description: "Brand Identity",
-      imageUrl: "/Images/coverBh.png",
+      imageUrl: "/Images/coverBh-min.png",
     },
     {
       id: 3,
