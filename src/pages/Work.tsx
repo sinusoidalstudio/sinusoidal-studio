@@ -12,12 +12,14 @@ const Work = () => {
       title: "Temple Glasses",
       description: "Eyewear Design",
       imageUrl: "/Images/BlondeMan.jpg",
+      websiteUrl: "https://templeglasses.com"
     },
     {
       id: "black-hole-pillow",
       title: "Black Hole Pillow",
       description: "Brand Identity",
       imageUrl: "/coverBh-min.png",
+      websiteUrl: "https://blackholepillow.com"
     },
   
   ];

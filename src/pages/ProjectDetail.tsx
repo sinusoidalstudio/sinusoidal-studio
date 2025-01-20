@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 
 const ProjectDetail = () => {
   const { projectId } = useParams<{ projectId: string }>();
@@ -23,6 +23,7 @@ const ProjectDetail = () => {
         "Brand Strategy"
       ],
       videoId: "lldmz-JhWTw",
+      websiteUrl: "https://templeglasses.com",
       longDescription: "Temple glasses are designed with a difference. Featuring non-slip pads that rest comfortably on your temples – the natural support points on your head – they put no more pressure on your ears, helping to prevent pain and irritation."
     },
     "black-hole-pillow": {
@@ -37,6 +38,7 @@ const ProjectDetail = () => {
         "Marketing Strategy"
       ],
       videoId: "TBffPFjsDmc",
+      websiteUrl: "https://blackholepillow.com",
       longDescription: "The Black Hole Pillow represents a revolutionary approach to comfort and rest, combining innovative design with premium materials."
     },
     
@@ -82,6 +84,23 @@ const ProjectDetail = () => {
               >
                 {project.fullDescription}
               </motion.p>
+              {project.websiteUrl && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.35 }}
+                  className="mb-8"
+                >
+                  <a
+                    href={project.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+                  >
+                    Visit Website <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </motion.div>
+              )}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
