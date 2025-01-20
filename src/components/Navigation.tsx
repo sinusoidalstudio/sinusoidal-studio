@@ -8,8 +8,8 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4 bg-black">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black">
+      <div className="flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img
             src="/logo.png"
