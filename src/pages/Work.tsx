@@ -17,7 +17,7 @@ const Work = () => {
       id: 2,
       title: "Project Two",
       description: "Brand Identity",
-      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      imageUrl: "/Images/coverBg.png",
     },
     {
       id: 3,
