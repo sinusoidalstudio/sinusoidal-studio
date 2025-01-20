@@ -32,6 +32,22 @@ const FeaturedOn = () => {
           >
             DesignWanted
           </a>
+          <a 
+            href="https://www.beautifullife.info/fashion-design/temple-eyewear-reinvents-glasses-for-maximum-comfort/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block text-2xl font-bold text-white hover:text-gray-300 transition-colors"
+          >
+            Beautiful Life
+          </a>
+          <a 
+            href="https://c.m.163.com/news/a/JI49QARO0511AR28.html" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block text-2xl font-bold text-white hover:text-gray-300 transition-colors"
+          >
+            163
+          </a>
         </div>
       </div>
     </main>
