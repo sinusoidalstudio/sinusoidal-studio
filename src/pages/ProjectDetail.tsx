@@ -36,23 +36,10 @@ const ProjectDetail = () => {
         "Development",
         "Marketing Strategy"
       ],
-      videoId: "lldmz-JhWTw",
+      videoId: "TBffPFjsDmc",
       longDescription: "The Black Hole Pillow represents a revolutionary approach to comfort and rest, combining innovative design with premium materials."
-    },
-    "project-three": {
-      title: "Project Three",
-      description: "Interactive Design",
-      fullDescription: "Digital Innovation",
-      imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-      details: [
-        "UI/UX Design",
-        "Development",
-        "Testing",
-        "Deployment"
-      ],
-      videoId: "lldmz-JhWTw",
-      longDescription: "An innovative approach to interactive design, pushing the boundaries of digital experiences."
     }
+    
   };
 
   const project = projectId ? projects[projectId as keyof typeof projects] : null;
