@@ -19,12 +19,7 @@ const Work = () => {
       description: "Brand Identity",
       imageUrl: "/coverBh-min.png",
     },
-    {
-      id: "project-three",
-      title: "Project Three",
-      description: "Interactive Design",
-      imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    },
+  
   ];
 
   const handleProjectClick = (projectId: string) => {

@@ -38,7 +38,7 @@ const ProjectDetail = () => {
       ],
       videoId: "TBffPFjsDmc",
       longDescription: "The Black Hole Pillow represents a revolutionary approach to comfort and rest, combining innovative design with premium materials."
-    }
+    },
     
   };
 
