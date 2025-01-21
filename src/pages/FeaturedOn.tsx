@@ -3,9 +3,19 @@ import Navigation from '../components/Navigation';
 
 const FeaturedOn = () => {
   return (
-    <main className="min-h-screen bg-background pt-24">
+    <main className="min-h-screen bg-background pt-24 relative overflow-hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-30"
+      >
+        <source src="/WebVideo.mp4" type="video/mp4" />
+      </video>
+      <div className="hero-overlay" />
       <Navigation />
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 py-12 relative z-20">
         <h1 className="text-4xl font-bold text-white mb-12">Featured On</h1>
         <div className="space-y-12">
           <a 
