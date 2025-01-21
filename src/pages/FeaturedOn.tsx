@@ -8,6 +8,13 @@ const FeaturedOn = () => {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-white mb-12">Featured On</h1>
         <div className="space-y-8">
+        <a 
+            href="https://www.behance.net/gallery/212771711/Temple-Glasses?tracking_source=curated_galleries_product-design" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block text-2xl font-bold text-white hover:text-gray-300 transition-colors"
+          >
+            Behance Industrial Design Gallery
           <a 
             href="https://www.yankodesign.com/2024/11/29/revolutionary-glasses-ditch-ear-straps-for-temple-pads-but-will-it-work/" 
             target="_blank" 
@@ -48,13 +55,7 @@ const FeaturedOn = () => {
           >
             163
           </a>
-          <a 
-            href="https://www.behance.net/gallery/212771711/Temple-Glasses?tracking_source=curated_galleries_product-design" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="block text-2xl font-bold text-white hover:text-gray-300 transition-colors"
-          >
-            Behance Industrial Design Gallery
+      
           </a>
         </div>
       </div>
