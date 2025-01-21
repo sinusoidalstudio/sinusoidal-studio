@@ -10,5 +10,6 @@ export const SERVICES = [
   { id: "web-design", label: "Web Design" },
   { id: "motion", label: "Motion Graphics" },
   { id: "3d", label: "3D Animation" },
-  { id: "interactive", label: "Interactive Experiences" }
+  { id: "interactive", label: "Interactive Experiences" },
+  { id: "product-design", label: "Product Design/Prototype" }
 ] as const;
