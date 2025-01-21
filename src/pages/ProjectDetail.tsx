@@ -28,7 +28,7 @@ const ProjectDetail = () => {
     },
     "black-hole-pillow": {
       title: "Black Hole Pillow",
-      description: "Brand Identity",
+      description: "Sleep Solutions",
       fullDescription: "Comfort meets innovation",
       imageUrl: "/coverBh-min.png",
       details: [
