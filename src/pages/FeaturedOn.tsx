@@ -48,6 +48,14 @@ const FeaturedOn = () => {
           >
             163
           </a>
+          <a 
+            href="https://www.behance.net/gallery/212771711/Temple-Glasses?tracking_source=curated_galleries_product-design" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block text-2xl font-bold text-white hover:text-gray-300 transition-colors"
+          >
+            Behance Industrial Design Gallery
+          </a>
         </div>
       </div>
     </main>
