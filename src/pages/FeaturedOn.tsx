@@ -8,7 +8,7 @@ const FeaturedOn = () => {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-white mb-12">Featured On</h1>
         <div className="space-y-8">
-        <a 
+          <a 
             href="https://www.behance.net/gallery/212771711/Temple-Glasses?tracking_source=curated_galleries_product-design" 
             target="_blank" 
             rel="noopener noreferrer"
