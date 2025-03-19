@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -31,6 +32,14 @@ const Navigation = () => {
                 <Link to="/featured" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">Featured On</Link>
                 <Link to="/about" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">About</Link>
                 <Link to="/contact" className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold">Contact</Link>
+                <a 
+                  href="https://childishcolors.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block px-4 py-2 text-white hover:bg-[#333333] transition-colors font-bold"
+                >
+                  Games
+                </a>
               </div>
             )}
           </div>
@@ -40,6 +49,14 @@ const Navigation = () => {
             <Link to="/featured" className="text-white hover:text-gray-300 transition-colors font-bold">Featured On</Link>
             <Link to="/about" className="text-white hover:text-gray-300 transition-colors font-bold">About</Link>
             <Link to="/contact" className="text-white hover:text-gray-300 transition-colors font-bold">Contact</Link>
+            <a 
+              href="https://childishcolors.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white hover:text-gray-300 transition-colors font-bold"
+            >
+              Games
+            </a>
           </div>
         )}
       </div>
