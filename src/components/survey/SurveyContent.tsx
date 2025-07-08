@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { UseFormReturn } from 'react-hook-form';
 import { ServiceSurveyValues } from '@/types/survey';
@@ -5,7 +6,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { EmailField } from './EmailField';
 import { ProjectTypeField } from './ProjectTypeField';
 import { ServicesField } from './ServicesField';
-import { BudgetField } from './BudgetField';
 
 interface SurveyContentProps {
   form: UseFormReturn<ServiceSurveyValues>;
@@ -30,10 +30,6 @@ export const SurveyContent = ({ form, currentStep, steps }: SurveyContentProps) 
 
       <TabsContent value="services" className="mt-0">
         <ServicesField form={form} />
-      </TabsContent>
-
-      <TabsContent value="budget" className="mt-0">
-        <BudgetField form={form} />
       </TabsContent>
 
       <TabsContent value="email" className="mt-0">

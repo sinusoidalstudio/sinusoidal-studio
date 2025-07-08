@@ -3,7 +3,6 @@ export interface ServiceSurveyValues {
   email: string;
   projectType: string;
   services: string[];
-  budget: string;
 }
 
 export const SERVICES = [

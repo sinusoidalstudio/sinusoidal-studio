@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
@@ -13,17 +14,16 @@ const ServiceSurvey = () => {
       email: '',
       projectType: '',
       services: [],
-      budget: '',
     }
   });
   const [currentStep, setCurrentStep] = React.useState(0);
-  const steps = ['projectType', 'services', 'budget', 'email'];
+  const steps = ['projectType', 'services', 'email'];
 
   const handleSubmit = async () => {
     const data = form.getValues();
     
     // Validate that all required fields are filled
-    if (!data.projectType || data.services.length === 0 || !data.budget || !data.email) {
+    if (!data.projectType || data.services.length === 0 || !data.email) {
       toast.error('Please fill in all fields before submitting.');
       return;
     }
@@ -40,12 +40,10 @@ const ServiceSurvey = () => {
 Project Details:
 - Project Type: ${formattedProjectType}
 - Services Required: ${data.services.join(', ')}
-- Budget Range: ${data.budget}
 - Contact Email: ${data.email}
         `.trim(),
         project_type: formattedProjectType,
         services: data.services.join(', '),
-        budget: data.budget,
       };
 
       await emailjs.send(
@@ -79,12 +77,6 @@ Project Details:
       case 'services':
         if (currentValues.services.length === 0) {
           toast.error('Please select at least one service');
-          canProceed = false;
-        }
-        break;
-      case 'budget':
-        if (!currentValues.budget) {
-          toast.error('Please select a budget range');
           canProceed = false;
         }
         break;
